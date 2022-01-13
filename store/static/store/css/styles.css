@@ -1,0 +1,142 @@
+* {
+   box-sizing: border-box;
+}
+
+.topnav {
+  background-color: #5F9EA0;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: grey;
+  color: black;
+}
+
+.items {
+	font-size: 10px;
+	position: absolute;
+	margin-top: 100px;
+	left: 100px;
+}
+
+
+.topnav {
+  background-color: #5F9EA0;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: grey;
+  color: black;
+}
+
+.items {
+	font-size: 20px;
+	position: absolute;
+	margin-top: 100px;
+	left: 100px;
+}
+
+body{
+	background-color:white;
+}
+
+
+h2.show-by-title a:hover {
+  text-decoration: none;
+}
+
+h2.show-by-title a{
+	color: black;
+}
+
+.items .description-edit {
+	color: white;
+}
+
+img {max-width: 150px; height: auto;}
+
+@media only screen and (min-width: 200px) {
+	.items  {
+		width: 20%;
+	}
+}
+
+
+.show-by-title{
+	font-size: 20px;
+}
+
+.items {
+   width: 300px;
+   text-align: center;
+   margin: 0 auto;
+   border-bottom: 2px solid #F5F5F5;
+   background: white;
+   font-family: "Open Sans";
+   transition: .3s ease-in;
+}
+
+.items:hover {
+   border-color: #bca480;
+}
+
+.product-items {
+	background: #fff none repeat scroll 0 0;
+	border: 1px solid #c0c0c0;
+	height: 390px;
+	padding: 25px 15px;
+	position: relative;
+	text-align: center;
+	transition: all 0.5s ease 0s;
+	margin-bottom: 20px;
+}
+.product-items:hover {
+	box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
+}
+.product-img {
+	height: 200px;
+}
+.product-title a {
+	color: #000;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+.product-desc {
+    max-height: 60px;
+    overflow: hidden;
+}

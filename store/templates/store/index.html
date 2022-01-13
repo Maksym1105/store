@@ -1,0 +1,16 @@
+{% extends 'store/base.html' %}
+
+{% block content %}
+<div class="product-items">
+	{% for p in posts%}	
+<div class="product-items">
+	{% if p.photo %}
+		<p><img class='img-article' src="{{p.photo.url}}"></p>
+	{% endif %}
+
+	<h2 class="product-title"><a href="{{ p.get_absolute_url }}" class="each-item">{{p.title}}</a></h2>
+	<p class="product-desc">{{p.description|linebreaks|truncatewords:50}}</p>
+	{% endfor %}
+	</div>
+{% endblock %}
+
