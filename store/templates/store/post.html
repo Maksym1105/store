@@ -1,0 +1,23 @@
+{% extends 'store/base.html' %}
+
+<body>
+{% block content %}
+
+
+	{% if post.photo %}
+	<div class="post">
+	<h1>{{title}}</h1>
+		<a><img class='img-article-post' src="{{post.photo.url}}"></a>
+	<p class="price-post">Цена: {{price}}</p>
+			<p>{{p.description}}</p>
+	{% endif %}
+	<div>
+
+		<button class="buy">В корзину</button>
+		
+	</div>
+
+	{{post.description|linebreaks}}
+	{% endblock %}
+</div>
+</body>

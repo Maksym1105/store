@@ -2,27 +2,29 @@
 
 {% block content %}
 
-	{% for p in posts%}	
+	{% for p in posts%}
 <body>
 	<div class="product-items">
 
 
 	{% if p.photo %}
-
+		
 		<p>
 			<a href="{{ p.get_absolute_url }}">	
 			<img class='img-article' src="{{p.photo.url}}"></p>
+
 	{% endif %}
 
 	<h2 class="product-title"><a href="{{ p.get_absolute_url }}" class="each-item">{{p.title}}</a></h2>
 	<p class="product-desc">{{p.description|linebreaks|truncatewords:15}}</p>
-	<p class="price">Цена:{{p.price}}</p>
+		<p class="price">Цена:{{p.price}}</p>
+
 
 	</div>
 
 	{% endfor %}
 
-
+	<!-- </div> -->
 
 {% endblock %}
 
