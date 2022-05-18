@@ -2,6 +2,9 @@ from .views import *
 
 from django.urls import path
 
+from django.conf import settings
+from django.conf.urls.static import static
+
 urlpatterns = [
     path('', index, name='home'),
     path('post/<int:post_id>', show_post, name='post'),
@@ -14,3 +17,5 @@ urlpatterns = [
 
 ]
 
+if settings.DEBUG:
+    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

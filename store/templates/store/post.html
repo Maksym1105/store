@@ -10,14 +10,10 @@
 		<a><img class='img-article-post' src="{{post.photo.url}}"></a>
 	<p class="price-post">Цена: {{price}}</p>
 			<p>{{p.description}}</p>
+
 	{% endif %}
-	<div>
-
-		<button class="buy">В корзину</button>
-		
-	</div>
-
 	{{post.description|linebreaks}}
+	<button class="buy">Купить</button>
 	{% endblock %}
 </div>
 </body>

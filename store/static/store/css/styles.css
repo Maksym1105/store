@@ -1,5 +1,11 @@
 * {
    box-sizing: border-box;
+   background-color: grey;
+}
+
+body{
+	background-color: black;
+	
 }
 
 .topnav {
@@ -137,3 +143,6 @@ price-post{
 	position: absolute;
 }
 
+.buy{
+	font-size: 150px;
+}

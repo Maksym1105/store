@@ -14,14 +14,15 @@
 			<img class='img-article' src="{{p.photo.url}}"></p>
 	{% endif %}
 
+	
 	<h2 class="product-title"><a href="{{ p.get_absolute_url }}" class="each-item">{{p.title}}</a></h2>
 	<p class="product-desc">{{p.description|linebreaks|truncatewords:15}}</p>
 	<p class="price">Цена:{{p.price}}</p>
 
-	</div>
+		</div>
+
 
 	{% endfor %}
-
 
 
 {% endblock %}
