@@ -1,15 +1,8 @@
 * {
    box-sizing: border-box;
-   background-color: grey;
-}
-
-body{
-	background-color: black;
-	
 }
 
 .topnav {
-  background-color: #5F9EA0;
   overflow: hidden;
 }
 
@@ -56,9 +49,9 @@ body{
   color: black;
 }
 
-body{
+/*body{
 	background-color:white;
-}
+}*/
 
 
 h2.product-title a:hover {
@@ -142,7 +135,7 @@ price-post{
 	transform:translate(200px,250px) ;
 	position: absolute;
 }
-
+/*
 .buy{
 	font-size: 150px;
-}
+}*/
