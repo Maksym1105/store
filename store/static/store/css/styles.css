@@ -131,3 +131,14 @@ body{
 	transform:translate(804px,250px)
 }
 	
+.login_page{
+	transform:translate(0,50px);
+}
+
+.register_page{
+	transform:translate(0,50px);
+}
+
+.cart{
+		transform:translate(0,50px);
+}

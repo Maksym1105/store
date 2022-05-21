@@ -5,7 +5,6 @@ from django.urls import reverse_lazy
 from django.views.generic import CreateView
 from django.contrib.auth.views import LoginView
 
-
 from .forms import RegisterUserForm, LoginUserForm
 from .models import *
 
@@ -58,12 +57,14 @@ def show_brand_xiaomi(request):
 
     return render(request, 'store/xiaomi.html', context=context)
 
+
 class LoginUser(LoginView):
     form_class = LoginUserForm
     template_name = 'store/login.html'
 
     def get_success_url(self):
         return reverse_lazy('home')
+
 
 class RegisterUser(CreateView):
     form_class = RegisterUserForm
@@ -73,6 +74,7 @@ class RegisterUser(CreateView):
     def form_valid(self, form):
         form.save
         return super(RegisterUser, self).form_valid(form)
+
 
 def LogoutUser(request):
     logout(request)

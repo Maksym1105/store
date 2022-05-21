@@ -2,11 +2,12 @@
 
 {% block content %}
 <h1>{{title}}</h1>
-
-<form method="post">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <button type="submit">Регистрация</button>
-</form>
+<div class="register_page">
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button id="register" type="submit">Регистрация</button>
+    </form>
+</div>
 
 {% endblock %}
