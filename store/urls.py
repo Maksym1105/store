@@ -1,6 +1,8 @@
+from django.contrib.auth import admin
+
 from .views import *
 
-from django.urls import path
+from django.urls import path, include
 
 from django.conf import settings
 from django.conf.urls.static import static
@@ -14,7 +16,6 @@ urlpatterns = [
     path('login', LoginUser.as_view(), name='login_page'),
     path('register', RegisterUser.as_view(), name='registration_page'),
     path('logout', LogoutUser, name='logout'),
-
 ]
 
 if settings.DEBUG:

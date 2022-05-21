@@ -26,6 +26,6 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='phones',
             name='brand',
-            field=models.ForeignKey(null=True, on_delete=django.db.models.deletion.PROTECT, to='store.brands'),
+            field=models.ForeignKey(null=True, on_delete=django.db.models.deletion.PROTECT, to='store1.brands'),
         ),
     ]
